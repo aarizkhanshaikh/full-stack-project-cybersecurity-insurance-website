@@ -1,0 +1,107 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+body {
+    background: linear-gradient(to bottom right, #001f3f, #4d4dff); /* Clean gradient */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Title and Headers */
+h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+    color: #ff99cc; /* Soft pink for a striking contrast */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #ffccff; /* Lighter purple for visual appeal */
+    font-weight: bold;
+}
+
+/* Paragraph and Text */
+p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    max-width: 80%;
+    color: #f8f9fa; /* Light gray for better readability */
+    line-height: 1.5;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    margin: 12px 0;
+    padding: 12px 25px;
+    background-color: #007bff; /* Bright blue for call-to-action */
+    color: white;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners */
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Link Hover Effects */
+a:hover {
+    background-color: #ff6699; /* Smooth pink on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow for depth */
+}
+
+/* Footer */
+footer {
+    background-color: #101820;
+    color: #cccccc;
+    padding: 12px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    border-top: 2px solid #4d94ff; /* Light blue border for elegance */
+    text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Reduce font size on smaller screens */
+    }
+
+    p, h2 {
+        font-size: 1.1rem;
+    }
+
+    a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Subtle animation for the body */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1.5s ease-out; /* Smooth fade-in effect */
+}
